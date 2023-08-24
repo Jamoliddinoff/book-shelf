@@ -4,7 +4,7 @@ import SVGIcon from "../../assets/SVGicon";
 
 const TextInput = ({label,placeholder,iconLeft,...props}) => {
     return (
-        <Wrapper>{label}
+        <Wrapper><span>{label}</span>
             <input style={{paddingLeft:iconLeft?40:null}} placeholder={placeholder} {...props}/>
             {iconLeft && (
                 <SVGIcon className="iconLeft" name={iconLeft} fill="rgb(55, 53, 214)" />
@@ -35,6 +35,10 @@ const Wrapper = styled.label`
     transition-duration: 400ms;
     flex: 1;
     padding: 12px 16px;
+  }
+  span{
+    margin-bottom: 4px;
+    margin-left: 6px;
   }
   svg{
     position: absolute;
