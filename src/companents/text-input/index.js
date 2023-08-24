@@ -42,7 +42,7 @@ const Wrapper = styled.label`
   }
   svg{
     position: absolute;
-    top:24px;
+    top:28px;
     left: 8px;
   }
 `;

@@ -49,9 +49,9 @@ const Register = () => {
             </Title>
             <InputWrapper onSubmit={submit}>
                 <TextInput label={'Name'} iconLeft={'user'} placeholder={'John Doe'}/>
-                <TextInput label={'Email'} iconLeft={'email'} type={'email'} placeholder={'Email@email.com'}/>
-                <TextInput label={'Key code'} type={'password'}/>
-                <TextInput label={'Secret code'} type={'password'}/>
+                <TextInput label={'Email'} iconLeft={'email'} type={'email'} placeholder={'email@gmail.com'}/>
+                <TextInput label={'Key code'} iconLeft={'credential'} type={'password'} placeholder={'Key'}/>
+                <TextInput label={'Secret code'} iconLeft={'credential'} type={'password'} placeholder={'Secret'}/>
                 {error && <Text color={'red'}>{error}</Text>}
                 <Button type={'submit'}>{loader?'Loading...':'Register'}</Button>
             </InputWrapper>
