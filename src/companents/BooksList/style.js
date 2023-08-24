@@ -18,7 +18,7 @@ export const CardItem = styled.div`
   transition: 0.3s ease-in;
   span{
     position: absolute;
-    right: 20px;
+    right: 30px;
     top:30px;
     border-radius: 10px;
     padding: 4px 8px;
@@ -49,6 +49,7 @@ export const ImageWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  background: rgba(243, 243, 243, 0.93);
 `;
 
 export const CardImage = styled.img`

@@ -7,6 +7,7 @@ import {userRegister} from "../api/entities";
 import {useDispatch} from "react-redux";
 import {signIn} from "../store/loginSlice";
 import HomeIcon from "../assets/shelf.png";
+import {theme} from "../assets/theme";
 
 const Register = () => {
     const [loader,setLoader] = useState(false);
@@ -40,7 +41,7 @@ const Register = () => {
         <Wrapper>
             <LogoWrapper>
                 <img src={HomeIcon} alt={'home-icon'}/>
-                <Text size={30} color={'#000'} weight={'600'}>Books shelf</Text>
+                <Text size={30} color={'#000'} weight={'600'}>Books <span style={{color:theme.colors.main}}>shelf</span></Text>
             </LogoWrapper>
             <hr/>
             <Title>
