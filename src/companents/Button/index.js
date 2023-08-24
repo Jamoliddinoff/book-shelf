@@ -16,5 +16,6 @@ const ButtonWrapper = styled.button`
   color: #fff;
   border: none;
   font-size: 16px;
+  cursor: pointer;
 `;
 export default Button;

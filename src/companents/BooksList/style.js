@@ -15,6 +15,7 @@ export const CardItem = styled.div`
   margin-bottom: 20px;
   box-shadow: 0px 9px 18px 0px rgba(0, 0, 0, 0.08);
   position: relative;
+  transition: 0.3s ease-in;
   span{
     position: absolute;
     right: 20px;
@@ -23,6 +24,11 @@ export const CardItem = styled.div`
     padding: 4px 8px;
     color: #eeeeee;
     font-size: 12px;
+  }
+  &:hover{
+    transform: translate(5px,-5px);
+    box-shadow: 0px 9px 28px 0px rgba(0, 0, 0, 0.38);
+
   }
   @media (max-width: 720px) {
     width: 270px;
@@ -49,6 +55,11 @@ export const CardImage = styled.img`
   width: ${props => props?.fit === '1' ? '100%' : '50%'};
   height: ${props => props?.fit === '1' ? '100%' : '50%'};
   object-fit: ${props => props?.fit === '1' ? 'cover' : null};
+  transition: 0.3s ease-in;
+
+  &:hover{
+    transform: scale(1.2);
+  }
 `;
 
 export const DescriptionItem =  styled.div`

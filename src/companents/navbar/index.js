@@ -19,7 +19,7 @@ const Navbar = () => {
                         <Text size={24} color={'#000'} weight={'600'}>Books shelf</Text>
                     </HomeLogo>
                 </div>
-                <Button onClick={()=>dispatch(logOute())}>Log Oute</Button>
+                <Button onClick={()=>dispatch(logOute())}>Log Out</Button>
 
             </Wrapper>
         </Container>
