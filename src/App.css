@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+  margin: 0px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.input {
+  position: relative;
+  width: 180px;
+  margin-bottom: 1rem;
+  margin-top: 8px;
+}
+.label{
+  color:  #6F7586;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 238px;
+
+}
+.input input {
+  appearance: none;
+  background: #F4F6FC;
+  height: 40px;
+  width: 180px;
+  border: 1px solid #E7E9F0;
+  border-radius: 12px;
+  font-size: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: #000;
+  transition-property: border, color;
+  transition-duration: 400ms;
+}
+.input input[type="text"]:focus + .iconLeft,
+.input input[type="email"]:focus + .iconLeft,
+.input input[type="password"]:focus + .iconLeft {
+  opacity: 1;
+}
+
+.input .iconLeft,
+.input .iconRight {
+  position: absolute;
+  opacity: 0.5;
+  transition: opacity 300ms;
+}
+.input .iconLeft {
+  top: 8px;
+  left: 8px;
+}
+.input .iconRight {
+  top: 13px;
+  right: 8px;
+}
+
+.justify-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.justify-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
